@@ -1,0 +1,47 @@
+{
+  "name": "webpack-react-pratice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "author": "Kevin031",
+  "license": "ISC",
+  "description": "A boilerplate for react + typescript development",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development ts-node --files -P ./scripts/tsconfig.json ./scripts/start.ts --open",
+    "build": "cross-env NODE_ENV=production ts-node --files -P scripts/tsconfig.json scripts/build"
+  },
+  "dependencies": {
+    "@hot-loader/react-dom": "^17.0.1",
+    "@types/react": "^17.0.13",
+    "@types/react-dom": "^17.0.8",
+    "@types/react-router-dom": "^5.1.7",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hot-loader": "^4.13.0",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/preset-typescript": "^7.14.5",
+    "@types/express": "^4.17.12",
+    "@types/html-webpack-plugin": "^3.2.5",
+    "@types/webpack-dev-middleware": "^5.0.0",
+    "@types/webpack-hot-middleware": "^2.25.4",
+    "babel-loader": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.2.6",
+    "express": "^4.17.1",
+    "html-webpack-plugin": "^5.3.2",
+    "less": "^4.1.1",
+    "less-loader": "^10.0.1",
+    "style-loader": "^3.0.0",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.5",
+    "webpack": "^5.42.0",
+    "webpack-dev-middleware": "^5.0.0",
+    "webpack-hot-middleware": "^2.25.0",
+    "webpack-merge": "^5.8.0"
+  }
+}
