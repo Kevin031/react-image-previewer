@@ -17,7 +17,7 @@ const commonConfig: Configuration = {
   output: {
     publicPath: '/',
     path: path.resolve(PROJECT_ROOT, './dist'),
-    filename: 'js/[name]-[hash].bundle.js'
+    filename: 'js/[name]-[chunkhash].bundle.js'
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.json'],
@@ -31,7 +31,7 @@ const commonConfig: Configuration = {
         test: /\.(tsx?|js)$/,
         loader: 'babel-loader',
         options: {
-          cacheDirectory: false
+          cacheDirectory: true
         },
         exclude: /node_modules/
       },

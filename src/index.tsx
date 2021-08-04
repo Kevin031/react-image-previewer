@@ -1,7 +1,3 @@
-import plus from './plus'
-
-console.log(plus(404, 404, 404, 404))
-
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'
