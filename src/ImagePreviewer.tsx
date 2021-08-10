@@ -73,21 +73,21 @@ const ImagePreviewer: React.FC<IProps> = ({
     })
     // 先用高度优先计算
     let translateX, translateY, scale, afterSize
-    if (rect.width < rect.height) { // 宽度优先
-      scale = window.innerHeight / rect.height
+    if (rect.width < rect.height || window.innerWidth > window.innerHeight) { // 宽度优先
+      scale = (window.innerHeight - padding * 2 )/ rect.height
       afterSize = {
         width: rect.width * scale,
         height: rect.height * scale
       }
       translateX = (rect.left - (window.innerWidth - afterSize.width ) / 2) / scale
-      translateY = rect.top / scale
+      translateY = (rect.top - padding) / scale
     } else { // 高度优先
-      scale = window.innerWidth / rect.width
+      scale = (window.innerWidth - padding * 2) / rect.width
       afterSize = {
         width: rect.width * scale,
         height: rect.height * scale
       }
-      translateX = rect.left / scale
+      translateX = (rect.left - padding) / scale
       translateY = (rect.top - (window.innerHeight - afterSize.height ) / 2) / scale
     }
     setImageStyle({
