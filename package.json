@@ -1,11 +1,11 @@
 {
   "name": "react-image-animated-previewer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "src/ImagePreviewer.js",
   "author": "Kevin031",
   "license": "ISC",
   "description": "An image previewer for react",
-  "repository": "",
+  "repository": "https://github.com/Kevin031/react-image-previewer.git",
   "keywords": [
     "react",
     "image",
